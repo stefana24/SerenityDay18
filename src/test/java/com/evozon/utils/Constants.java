@@ -9,5 +9,5 @@ public class Constants {
 
     public static final String BASE_URL = "http://qa2.dev.evozon.com/";
 
-    public static final String productWasAddedMessage = " was added to your shopping cart.";
+    public static final String WAS_ADDED_TO_SHOPPING_CART_MESSAGE = " was added to your shopping cart.";
 }

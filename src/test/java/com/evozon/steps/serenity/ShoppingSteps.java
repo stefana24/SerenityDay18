@@ -1,22 +1,20 @@
 package com.evozon.steps.serenity;
 
-import com.evozon.pages.ShoppingcartPage;
-import net.serenitybdd.core.pages.WebElementFacade;
+import com.evozon.pages.ShoppingCartPage;
 import net.thucydides.core.annotations.Step;
 import org.junit.Assert;
 
 public class ShoppingSteps {
 
-    private ShoppingcartPage shoppingcartPage;
+    private ShoppingCartPage shoppingcartPage;
 
     @Step
-    public void verifyProductWasAddedMessage(String productName){
+    public void verifyMessageProductWasAdded(String productName){
         Assert.assertTrue(shoppingcartPage.isAddedMessage(productName));
     }
 
     @Step
     public void verifyProductWasAddedInContainer(String productName){
-//        Assert.assertTrue(product.getText().equalsIgnoreCase(productName));
         Assert.assertTrue(shoppingcartPage.isProductInCart(productName) );
     }
 }

@@ -4,10 +4,10 @@ import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.WebElementFacade;
 import org.openqa.selenium.By;
 
-public class ProductPage extends Basepage{
+public class ProductPage extends BasePage {
 
     @FindBy(css="#advice-required-entry-attribute92")
-    private WebElementFacade colorRequiredmessage;
+    private WebElementFacade colorRequiredMessage;
 
     @FindBy(css="#advice-required-entry-attribute180")
     private WebElementFacade sizeRequiredMessage;
@@ -22,7 +22,7 @@ public class ProductPage extends Basepage{
     }
 
     public boolean isColorRequiredMessage(){
-        return colorRequiredmessage.isDisplayed();
+        return colorRequiredMessage.isDisplayed();
     }
 
     public boolean isSizeRequiredMessage(){

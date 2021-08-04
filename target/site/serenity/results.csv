@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Log in test","Login test with valid username","SUCCESS","2021-08-04T10:34:34.1119324+03:00[Europe/Bucharest]","0.0","19.11"
+"Shoppingcart test","Verify access to category and subcategory","SUCCESS","2021-08-04T12:01:26.7293248+03:00[Europe/Bucharest]","0.0","33.89"
+"Shoppingcart test","Add tocart with login test","SUCCESS","2021-08-04T12:15:39.7144276+03:00[Europe/Bucharest]","0.0","64.71"

@@ -1,14 +1,13 @@
 package com.evozon.features;
 
-import com.evozon.pages.Basepage;
-import com.evozon.steps.serenity.LoginStep;
+import com.evozon.steps.serenity.LogInStep;
 import com.evozon.utils.Constants;
 import net.thucydides.core.annotations.Steps;
 import org.junit.Test;
 
 public class LogInTest extends BaseTest {
     @Steps
-    private LoginStep loginStep;
+    private LogInStep loginStep;
 
     @Test
     public void loginTestWithValidUsername(){

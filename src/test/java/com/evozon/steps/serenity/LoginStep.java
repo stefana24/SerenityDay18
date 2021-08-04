@@ -1,30 +1,29 @@
 package com.evozon.steps.serenity;
 
-import com.evozon.pages.Dashboard;
+import com.evozon.pages.DashboardPage;
 import com.evozon.pages.HomePage;
 import com.evozon.pages.LogInPage;
 import com.evozon.utils.Constants;
 import net.thucydides.core.annotations.Step;
-import net.thucydides.core.annotations.StepGroup;
 import org.junit.Assert;
 
-public class LoginStep {
+public class LogInStep {
     private HomePage homePage;
     private LogInPage loginPage;
-    private Dashboard dashboardPage;
+    private DashboardPage dashboardPage;
 
     @Step
     public void navigateToLoginPage(){
         //homePage.open();
-        homePage.clickMyAccount();
-        homePage.clickLogInLink();
+        homePage.clickOnMyAccount();
+        homePage.clickOnLogInLink();
     }
 
     @Step
     public void loginWithCredentials(String email, String password){
         loginPage.setEmailField(email);
         loginPage.setPasswordField(password);
-        loginPage.clickLoginButton();
+        loginPage.clickOnLoginButton();
     }
     @Step
     public void verifyLoggedIn(String value){

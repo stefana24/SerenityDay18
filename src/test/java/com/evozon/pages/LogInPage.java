@@ -3,7 +3,7 @@ package com.evozon.pages;
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.WebElementFacade;
 
-public class LogInPage extends Basepage{
+public class LogInPage extends BasePage {
     @FindBy(id = "email")
     private WebElementFacade emailField;
 
@@ -21,7 +21,7 @@ public class LogInPage extends Basepage{
         typeInto(passwordField, password);
     }
 
-    public void clickLoginButton(){
+    public void clickOnLoginButton(){
         clickOn(loginButton);
     }
 

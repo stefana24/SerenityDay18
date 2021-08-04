@@ -4,6 +4,6 @@ import net.thucydides.core.annotations.DefaultUrl;
 import net.thucydides.core.pages.PageObject;
 
 @DefaultUrl("http://qa2.dev.evozon.com/")
-public class Basepage extends PageObject {
+public class BasePage extends PageObject {
 
 }
