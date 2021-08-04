@@ -15,7 +15,7 @@ public class LogInStep {
     @Step
     public void navigateToLoginPage(){
         //homePage.open();
-        homePage.clickOnMyAccount();
+        homePage.clickOnAccount();
         homePage.clickOnLogInLink();
     }
 

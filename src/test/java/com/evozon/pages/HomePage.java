@@ -8,15 +8,22 @@ import net.thucydides.core.annotations.DefaultUrl;
 public class HomePage extends BasePage {
 
     @FindBy(css = "a[href*='/account'] .label")
-    private WebElementFacade myAccountLink;
+    private WebElementFacade accountLink;
 
     @FindBy(css = "a[title='Log In']")
     private WebElementFacade logInLink;
 
-    public void clickOnMyAccount(){
-        clickOn(myAccountLink);
+    @FindBy(css="a[title='Register'")
+    private WebElementFacade registerLink;
+
+    public void clickOnAccount(){
+        clickOn(accountLink);
     }
     public void clickOnLogInLink(){
         clickOn(logInLink);
+    }
+
+    public void clickOnRegisterLink(){
+        clickOn(registerLink);
     }
 }
