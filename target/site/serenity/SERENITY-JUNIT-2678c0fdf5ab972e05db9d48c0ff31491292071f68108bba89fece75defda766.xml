@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="com.evozon.features.ShoppingcartTest" skipped="0" tests="1" time="33.89" timestamp="2021-08-04 12:01:26"><testcase classname="com.evozon.features.ShoppingcartTest" name="Verify access to category and subcategory"/></testsuite>
